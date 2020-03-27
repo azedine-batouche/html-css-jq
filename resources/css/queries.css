@@ -14,7 +14,7 @@
 /* small tablets to big tablets from 767px to 1023px */
 @media  only screen and (max-width: 1023px){
     body{
-        font-size: 15px;
+        font-size: 18px;
     }
     section{
         padding: 60px 0;
@@ -51,7 +51,7 @@
 @media  only screen and (max-width: 767px){
 
     body{
-        font-size: 14px;
+        font-size: 16px;
     }
     section{
         padding: 30px 0;
@@ -76,6 +76,10 @@
     .main-nav li{
         display: block;
     }
+    .main-nav li:last-child {
+        text-align: center !important;
+        background-color: #e58e26 !important;
+    }
     .main-nav li a:link,
     .main-nav li a:visited{
         display: block;
@@ -88,8 +92,8 @@
     .menu-sharp {
         font-size: 300%;
     }
-    .sticky .main-nav li:last-child a:link,
-    .sticky .main-nav li:last-child a:visited{
+    .sticky .main-nav li:last-child a:hover,
+    .sticky .main-nav li:last-child a:active{
         border: 0px;
     }
     .sticky .main-nav{
@@ -100,7 +104,7 @@
     .sticky .main-nav li a:link,
     .sticky .main-nav li a:visited{ padding: 15px 0px;}
     .sticky .logo{display: none;}
-    .sticky .logo-black{display: block; position: absolute; left: 48%; height: 35px;  margin-top: 7px;}
+    .sticky .logo-black{display: block; position: absolute; left: 48%; height: 45px;  margin-top: 15px;}
     .sticky .menu-sharp{ color: #000;}
     .sticky a{margin-top: 15px;}
     .sticky .main-nav li:last-child {
