@@ -1,0 +1,204 @@
+
+/* Big tablets to 1200px (widths smaller then 1140px row ) */
+@media  only screen and (max-width: 1200px){
+    .hero-text-box{
+        position: absolute;
+        width: 100%;
+        padding: 0% 2%;
+    }
+    .row{
+        padding: 0% 2%;
+    }
+    .icon-small{ width: 17px; margin-right: 5px;}
+}
+/* small tablets to big tablets from 767px to 1023px */
+@media  only screen and (max-width: 1023px){
+    body{
+        font-size: 15px;
+    }
+    section{
+        padding: 60px 0;
+    }
+    .main-nav li{
+        margin-left: 25px;
+    }
+    .features-definition{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .works-steps:last-of-type{
+        margin-bottom: 60px;
+    }
+    .works-steps{
+        margin-bottom: 40px;
+    }
+    .app-screen{
+        width: 50%;
+    }
+    .steps-box:last-child {
+        margin-top: 30px;
+    }
+    .plan-box {
+        width: 96%;
+        margin-left: 2%;
+    }
+    .contact-form {
+        width: 80%;
+    }
+}
+/* small phone to small tablets from 481px to 767px */
+@media  only screen and (max-width: 767px){
+
+    body{
+        font-size: 14px;
+    }
+    section{
+        padding: 30px 0;
+    }
+    .row, .hero-text-box{padding: 0% 4%;}
+    .hero-text-box{ text-align: center;}
+    .logo { height: 50px;   
+          margin-top: 5px;
+        position: absolute;
+        left: 48%;}
+    .col{width: 100%; margin: 0 0 4% 0;}
+
+    .mobile-nav-icon{
+        display: inline-block;
+    }
+    .main-nav{
+        float: left;
+        margin-top: 70px;
+        width: 90%;
+        display: none;
+    }
+    .main-nav li{
+        display: block;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        display: block;
+        border: 0;
+    } 
+    .mobile-nav-icon {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .menu-sharp {
+        font-size: 300%;
+    }
+    .sticky .main-nav li:last-child a:link,
+    .sticky .main-nav li:last-child a:visited{
+        border: 0px;
+    }
+    .sticky .main-nav{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        width: 87%;
+    }
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited{ padding: 15px 0px;}
+    .sticky .logo{display: none;}
+    .sticky .logo-black{display: block; position: absolute; left: 48%; height: 35px;  margin-top: 7px;}
+    .sticky .menu-sharp{ color: #000;}
+    .sticky a{margin-top: 15px;}
+    .sticky .main-nav li:last-child {
+        padding: 0px;
+        border: 2px solid #e58e26;
+        border-radius: 5px;
+    }
+    .sticky .main-nav li:last-child a:link, .sticky .main-nav li:last-child a:visited {
+        border: 0px;
+        text-align: center;
+        margin: 0;
+        background-color: #e58e26;
+    }
+     
+    .features-definition{
+        width: 100%;
+        margin-left: 0%;
+    }
+    h1{font-size: 180%;}
+    h2{font-size: 150%;}
+    .works-steps:last-of-type{
+        margin-bottom: 20px;
+    }
+    .works-steps{
+        display: table;
+        margin-bottom: 15px;
+    }
+    .works-steps:last-child{
+        margin-bottom: 50px;
+    }
+    .box .icon-big{
+        display: block;
+        margin: 0px auto 0px auto;
+    }
+    .titre-icon-big{
+        display: block;
+        margin: 0 auto;
+        text-align: center ;
+        padding-bottom: 10px;
+    }
+    .works-steps div{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        padding: 4px !important;
+        font-size: 150%;
+        margin-right: 15px;
+    }
+    .works-steps p{
+       display: table-cell;
+       vertical-align: middle;
+    }
+   
+    .steps-box div{
+        padding: 0px 10%;
+    }
+    .steps-box:first-child {
+        text-align: center;
+    }
+    .btn-download{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .app-screen{
+        width: 40%;
+    }
+    .testimonials:before{
+        top: -30px;
+        left: 0px;
+    }
+    .testimonials{
+        margin-bottom: 8%;
+    }
+    footer .footer-nav, footer .logo-bar{
+        float: none !important;
+        display: block !important;
+        text-align: center !important;
+    }
+    .btn-app img {
+        height:  40px;
+    } 
+}
+/* small phone from 0 to 480px */
+@media  only screen and (max-width: 480px){
+    section{
+        padding: 25px 0;
+    }
+    .contact-form{ width: 100%;}
+    .hero-text-box {
+        text-align: center;
+    }
+    .footer-nav, .logo-bar{
+        float: none !important;
+        display: block !important;
+        text-align: center !important;
+    }
+    .btn-app img {
+        height: 30px;
+    } 
+}

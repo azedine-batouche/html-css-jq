@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice-width, initial=1.0">
+        <meta name="description" content="MyFood est un service de livraison premium avec la mission de vous apporter des repas sains et équilibrés">
+        <link rel="stylesheet" type="text/css" href="./vendors/css/normalize.css"> 
+        <link rel="stylesheet" type="text/css" href="./vendors/css/grid.css"> 
+        <link rel="stylesheet" type="text/css" href="./vendors/css/grid.css"> 
+        <link rel="stylesheet" type="text/css" href="./vendors/css/animate.css"> 
+        <link rel="stylesheet" type="text/css" href="./resources/css/style.css"> 
+        <link rel="stylesheet" type="text/css" href="./resources/css/queries.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap&subset=latin-ext" rel="stylesheet">
+        <title>My Food</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicons/favicon-16x16.png">
+        <link rel="manifest" href="./resources/favicons/site.webmanifest">
+        <link rel="mask-icon" href="./resources/favicons/safari-pinned-tab.svg" color="#464646">
+        <link rel="shortcut icon" href="./resources/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="./resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <header>
+            <nav class="sticky">
+                <div class="row container-nav">
+                    <img src="./resources/img/logo-white.png" alt="My Food logo" class="logo">
+                    <img src="./resources/img/logo.png" alt="My Food logo" class="logo-black">
+                    <ul class="main-nav js-main-nav">
+                        <li><a href="#features">Livraison à domicile</a></li>
+                        <li><a href="#works">comment ça marche</a></li>
+                        <li><a href="#cityes">Nos villes</a></li>
+                        <li><a href="#prices">S'inscrire</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js-nav-icon"><ion-icon name="menu-sharp" class="menu-sharp"></ion-icon></a>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>Au revoir à la malbouffe.<br> Bonjour aux repas sains.</h1>
+                <a class="btn btn-full js--scroll-to-plans" href="#">J'ai faim</a>
+                <a class="btn btn-ghost js--scroll-to-meals" href="#">Montre moi plus</a>
+            </div>
+        </header>
+        <section class="section-features js--section-features" id="features">
+            <div class="row">
+                <h2>OBTENEZ DES REPAS &mdash;sains &mdash; équilibrés</h2>
+                <p class="features-definition">          
+                Bonjour, nous sommes MyFood, votre nouveau service de livraison de nourriture haut de gamme. 
+                Nous savons que vous êtes toujours occupé. Pas le temps de cuisiner.
+                Nous nous occupons de cela, nous sommes vraiment bons dans ce domaine, promis!
+                </p>
+            </div>
+            <div class="row js-wp-1">
+                <div class="col span-1-of-4 box">
+                    <ion-icon name="infinite-outline" class="icon-big"></ion-icon>
+                    <h3 class="titre-icon-big">JUSQU'A 365 days</h3>
+                    <p>       
+                        Ne cuisinez plus jamais! Nous le pensons vraiment. Nos plans d'abonnement incluent une couverture jusqu'à 365 jours / an.
+                        Vous pouvez également choisir de commander de manière plus flexible si tel est votre style.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <ion-icon name="stopwatch-outline" class="icon-big"></ion-icon>
+                    <h3 class="titre-icon-big">Prêt en 20 min</h3>
+                    <p>                   
+                        Vous n'êtes qu'à vingt minutes de vos repas délicieux et super sains livrés directement à votre domicile.
+                        Nous travaillons avec les meilleurs chefs de chaque ville pour vous assurer que vous êtes 100% heureux.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <ion-icon name="nutrition-outline" class="icon-big"></ion-icon>
+                    <h3 class="titre-icon-big">100% BIO</h3>
+                    <p>                  
+                        Tous nos légumes sont frais, bio et locaux. Les animaux sont élevés sans hormones ni antibiotiques ajoutés.
+                        Bon pour votre santé, l'environnement et il a aussi meilleur goût!
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <ion-icon name="cart-outline" class="icon-big"></ion-icon>
+                    <h3 class="titre-icon-big">Commander tous</h3>
+                    <p>   
+                        Nous ne limitons pas votre créativité, ce qui signifie que vous pouvez commander ce que vous voulez.
+                        Vous pouvez également choisir parmi notre menu contenant plus de 100 délicieux repas. C'est à vous!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section-meals" id="meals-pictures">
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes ">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/3.jpg" alt="Chicken breast steak with vegetables  ">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/4.jpg" alt="Autumn pumpkin soup">
+                    </figure>
+                </li>
+            </ul>
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/5.jpg" alt="Paleo beef steak with vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/7.jpg" alt="Burger with cheddar and bacon ">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/8.jpg" alt="Granola with cherries and strawberries">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <section class="section-steps" id="works">
+            <div class="row">
+                <h2>Comment sa marche</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 steps-box">
+                    <img src="./resources/img/app-iPhone.png" alt="My food app on iphone" class="app-screen js-wp-2">
+                </div>
+                <div class="col span-1-of-2 steps-box">
+                    <div class="works-steps">
+                        <div>1</div>
+                        <p>Choisissez le plan d'abonnement qui correspond le mieux à vos besoins et inscrivez-vous dès aujourd'hui.</p>
+                    </div>
+                    <div class="works-steps">
+                        <div>2</div>
+                        <p>Commandez votre délicieux repas en utilisant notre application mobile ou notre site Web. Ou vous pouvez même nous appeler!</p>
+                    </div>
+                    <div class="works-steps">
+                        <div>3</div>
+                        <p>Profitez de votre repas en moins de 20 minutes. A la prochaine fois!</p>
+                    </div>
+                    <div class="btn-download">
+                        <a href="#" class="btn-app"><img src="./resources/img/download-app.svg" alt="App store button"></a>
+                        <a href="#" class="btn-app"><img src="./resources/img/download-app-android.png" alt="Play store button"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-cities" id="cityes">
+            <div class="row">
+                <h2>Nous sommes present</h2>
+            </div>
+            <div class="row js-wp-3">
+                <div class="col span-1-of-4 box">
+                    <img src="./resources/img/lisbon-3.jpg" alt="Lisbon">
+                    <h3 class="city-name">Lisbon</h3>
+                    <div class="city-feature">
+                         <ion-icon name="person-outline" class="icon-small"></ion-icon>
+                        1600+ satisfait
+                    </div>
+                    <div class="city-feature">
+                        <ion-icon name="star-outline" class="icon-small"></ion-icon>
+                        60+ top chefs
+                   </div>
+                   <div class="city-feature">
+                    <ion-icon name="mail-sharp" class="icon-small"></ion-icon>         
+                         <a href="#">@myfood_li</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="./resources/img/san-francisco.jpg" alt="San Francisco">
+                    <h3 class="city-name">San Francisco</h3>
+                    <div class="city-feature">
+                         <ion-icon name="person-outline" class="icon-small"></ion-icon>
+                         3700+ satisfait
+                    </div>
+                    <div class="city-feature">
+                        <ion-icon name="star-outline" class="icon-small"></ion-icon>
+                        160+ top chefs
+                   </div>
+                   <div class="city-feature">
+                    <ion-icon name="mail-sharp" class="icon-small"></ion-icon>
+                     <a href="#">@myfood_sf</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="./resources/img/berlin.jpg" alt="Berlin">
+                    <h3 class="city-name">Berlin</h3>
+                    <div class="city-feature">
+                         <ion-icon name="person-outline" class="icon-small"></ion-icon>
+                         2300+ satisfait
+                    </div>
+                    <div class="city-feature">
+                        <ion-icon name="star-outline" class="icon-small"></ion-icon>
+                         110+ top chefs
+                   </div>
+                   <div class="city-feature">
+                    <ion-icon name="mail-sharp" class="icon-small"></ion-icon>                 
+                        <a href="#"> @myfood_berlin</a>
+                    </div>
+                </div>
+                    <div class="col span-1-of-4 box">
+                        <img src="./resources/img/london.jpg" alt="London">
+                        <h3 class="city-name">London</h3>
+                        <div class="city-feature">
+                             <ion-icon name="person-outline" class="icon-small"></ion-icon>
+                             1200+ satisfait
+                        </div>
+                        <div class="city-feature">
+                            <ion-icon name="star-outline" class="icon-small"></ion-icon>
+                            50+ top chefs
+                       </div>
+                       <div class="city-feature">
+                        <ion-icon name="mail-sharp" class="icon-small"></ion-icon>
+                            <a href="#">@myfood_london</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="section-customers">
+            <div class="row">
+                <h2>Nos clients compte sur nous</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3 testimonials">
+                    <p>                             
+                        Omnifood est tout simplement génial! Je viens de lancer une startup qui ne me laisse pas de temps pour cuisiner,
+                        Omnifood sauve donc la vie. Maintenant que je m'y suis habitué, je ne pouvais pas vivre sans mes repas quotidiens!
+                    </p>
+                    <div class="customers">
+                        <img src="./resources/img/customer-1.jpg" alt="Customer 1">
+                        <h6>- Alberto Duncan</h6>
+                    </div>
+                </div>
+                <div class="col span-1-of-3 testimonials">
+                    <p>
+                        Des repas bon marché, sains et savoureux, livrés directement à mon domicile. Nous avons beaucoup de livraison de nourriture ici à Lisbonne,
+                        mais personne ne s'approche même d'Omifood. Ma famille et moi sommes tellement amoureux!
+                    </p>
+                    <div class="customers">
+                        <img src="./resources/img/customer-2.jpg" alt="Customer 1">
+                        <h6>- Joana Silva</h6>
+                    </div>
+                </div>
+                <div class="col span-1-of-3 testimonials">
+                    <p>                                                
+                        Je cherchais un service de livraison de nourriture rapide et facile à San Franciso. J'en ai essayé beaucoup et je me suis retrouvé avec Omnifood. 
+                        Meilleur service de livraison de nourriture dans la région de la baie. Continuez ce bon travail!
+                    </p>
+                    <div class="customers">
+                        <img src="./resources/img/customer-3.jpg" alt="Customer 1">
+                        <h6>- Milton Chapman</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-pricing js-section-plans" id="prices">
+            <div class="row">
+                <h2>Manger sainement dès aujourd'hui</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="plan-box js-wp-4">
+                        <div>
+                            <h3>Premium</h3>
+                            <p class="plan-price">399€<span> / mois</span></p>
+                            <p class="plan-price-meal">Seulement 13.30€ par repas</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>1 repas chaque jour</li>
+                                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Commande 24h/24 & 7/7</li>
+                                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Accès au meilleurs creations</li>
+                                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Livraison gratuite</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-full">S'inscrire</a>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Pro</h3>
+                            <p class="plan-price">149€<span> / mois</span></p>
+                            <p class="plan-price-meal">Seulement 14.90€ par repas </p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>1 repas 10 jours/mois</li>
+                                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Commande 24h/24 & 7/7</li>
+                                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Accès au meilleurs creations</li>
+                                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Livraison gratuite</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost">S'inscrire</a>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Starter</h3>
+                            <p class="plan-price">19€<span> / mois</span></p>
+                            <p class="plan-price-meal">&nbsp;</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>1 repas</li>
+                                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Commande de 8h à to 12h </li>
+                                <li><ion-icon name="close-outline" class="icon-small"></ion-icon> </li>
+                                <li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Livraison gratuite</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost">S'inscrire</a>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <section class="section-contact">
+            <div class="row">
+                <h2>Nous sommes heureux de vous repondre</h2>
+            </div>
+            <div class="row">
+                <form method="POST" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Nom</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name"  required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Mail</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email"  required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">Suggestion</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends">Amis</option>
+                                <option value="internet">Internet</option>
+                                <option value="Others">Autre...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletters ?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" checked> oui, svp!
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="message">Laissez nous un message</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" id="message" placeholder="..."></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Envoyer nous!">
+                        </div>
+                    </div>
+                 </form>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">A propros</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Presses</a></li>
+                        <li><a href="#">IOS app</a></li>
+                        <li><a href="#">Android app</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="logo-bar">
+                        <li><a href="#"><ion-icon name="logo-twitter" class="twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-google" class="google"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2020 by my food, Tous droits reservés.
+                </p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+        <script src="./vendors/js/jquery.waypoints.min.js"></script>
+        <script src="./resources/js/script.js"></script>
+    </body>
+</html>
