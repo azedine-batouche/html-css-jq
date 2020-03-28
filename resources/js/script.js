@@ -1,6 +1,5 @@
 $(document).ready(function(){
     $('nav').removeClass('sticky');
-    $('.close-sharp').css('display','none');
     /* For the sticky navigation */
     $('.js--section-features').waypoint(function(direction){
         if(direction === 'down'){
@@ -99,4 +98,11 @@ $('.js-nav-icon').click(function(){
         $('.close-sharp').css('display','none');
     }  
 });
+
+// $('html').click(function(event) {
+//     if ($(event.target).closest('.js-nav-icon').length === 0) {
+//         $('.js-main-nav').hide();
+//     }
+// });
+
 });

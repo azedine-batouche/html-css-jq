@@ -59,7 +59,7 @@
     .row, .hero-text-box{padding: 0% 4%;}
     .hero-text-box{ text-align: center;}
     .logo { height: 50px;   
-          margin-top: 5px;
+        margin-top: 5px;
         position: absolute;
         left: 48%;}
     .col{width: 100%; margin: 0 0 4% 0;}
@@ -70,7 +70,7 @@
     .main-nav{
         float: left;
         margin-top: 70px;
-        width: 90%;
+        width: 85%;
         display: none;
     }
     .main-nav li{
@@ -79,12 +79,23 @@
     .main-nav li:last-child {
         text-align: center !important;
         background-color: #e58e26 !important;
+        margin-bottom: 10px;
     }
     .main-nav li a:link,
     .main-nav li a:visited{
         display: block;
         border: 0;
     } 
+    .container-nav a:hover,
+    .container-nav a:active,
+    .container-nav a:link,
+    .container-nav a:visited{
+        border: 0 !important;
+        padding-bottom: 0px;
+    }
+    .container-nav{
+        box-shadow: 0px 1px rgba(0, 0, 0, 0.7);
+    }
     .mobile-nav-icon {
         margin-bottom: 10px;
         margin-top: 10px;
