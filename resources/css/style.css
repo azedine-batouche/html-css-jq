@@ -229,7 +229,7 @@ header{
     cursor: pointer;
     display: none;
 }
-.menu-sharp{
+.menu-sharp, .menu-close{
     font-size: 200%;
     color: #fff;
 }
@@ -419,7 +419,7 @@ header{
     position: relative;
 } 
 .testimonials p{
-    font-family: cursive;
+    font-family: 'lato';
     line-height: 145%;
 }
 /*-----------------------------------*/

@@ -1,5 +1,13 @@
 $(document).ready(function(){
     $('nav').removeClass('sticky');
+    var size = {
+        width: window.innerWidth || document.body.clientWidth,
+        height: window.innerHeight || document.body.clientHeight
+      };
+      if(size.width >= 768){ 
+        $('.js-main-nav').show();
+      }
+
     /* For the sticky navigation */
     $('.js--section-features').waypoint(function(direction){
         if(direction === 'down'){
@@ -83,26 +91,46 @@ $('.js-wp-4').waypoint(function(direction){
 /*  Mobile nav  */
 $('.js-nav-icon').click(function(){
     var nav = $('.js-main-nav');
-    var icon = $('.js-nav-icon ion-icon');
     nav.slideToggle(200);
 
-    if(icon.hasAttribute('name') === 'menu-sharp'){
-        console.log('erzerez');
-        icon.setAttribute('name','close-sharp');
-    //    $(' .js-nav-icon .menu-sharp').css('display','none');
-    //    $(' .close-sharp').css('display','block');
-    //    icon.removeClass('menu-sharp');
+    console.log(document.getElementById("icon-menu").name);
+    if(document.getElementById("icon-menu").name === 'menu-sharp'){
+        document.getElementById("icon-menu").name ="close-outline";
     }else{
-        icon.addClass('menu-sharp');
-        icon.css('display','block')
-        $('.close-sharp').css('display','none');
+        document.getElementById("icon-menu").name ="menu-sharp";
     }  
 });
 
-// $('html').click(function(event) {
-//     if ($(event.target).closest('.js-nav-icon').length === 0) {
-//         $('.js-main-nav').hide();
-//     }
-// });
 
+$('html').click(function(event) {
+    var size = {
+        width: window.innerWidth || document.body.clientWidth,
+        height: window.innerHeight || document.body.clientHeight
+      }
+      if(size.width < 768){          
+        if ($(event.target).closest('.js-nav-icon').length === 0) {
+            $('.js-main-nav').hide();
+            document.getElementById("icon-menu").name ="menu-sharp";
+        }
+    }else{
+        $('.js-main-nav').show();
+    }
 });
+});
+
+function displayWindowSize(){
+    var size = {
+        width: window.innerWidth || document.body.clientWidth,
+        height: window.innerHeight || document.body.clientHeight
+      }
+      if(size.width >= 768){     
+        $('.js-main-nav').show();
+      }
+      else{
+        $('.js-main-nav').hide();
+      }
+}
+
+window.addEventListener("resize", displayWindowSize);
+
+
