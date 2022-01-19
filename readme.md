@@ -9,7 +9,7 @@ This project using html, css and jquery to get a website design with animation
 ![MyFood](./resources/img/screenshot.png)
 
 # Demo
-To get the demo click of the website click here : [Myfood](https://batouche-dev.github.io/html-css-jq/) .
+To get the demo click of the website click here : [Myfood](https://azedine-batouche.github.io/html-css-jq/) .
 
 # Setup 
 first clone the porject in your workspace with this command line
